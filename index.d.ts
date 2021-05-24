@@ -1,9 +1,7 @@
-// Type definitions for Tableau's Javascript API version 2.8.x
+// Type definitions for Tableau's Javascript API version 2.8.1
 // Project: https://github.com/tableau-developers/ts-types-tableau-js-api, https://help.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api.htm
 // Definitions by: John Hegele <https://github.com/jhegele>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-// Types built against v2.8.1
 
 /**
  * Type definitions were built using Tableau's API documentation as a reference:
@@ -25,7 +23,7 @@
  * excluded here.
  */
 
-export as namespace Tableau;
+export as namespace tableau;
 
 export * from './enums';
 export * from './viz';
