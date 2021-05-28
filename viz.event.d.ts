@@ -8,58 +8,58 @@ import { Parameter } from './parameter';
 import { Size } from './other';
 
 export class TableauEvent {
-  getViz(): Viz;
-  getEventName(): TableauEventName;
+    getViz(): Viz;
+    getEventName(): TableauEventName;
 }
 
 export class CustomViewEvent extends TableauEvent {
-  // methods
-  getCustomViewAsync(): Promise<CustomView>;
+    // methods
+    getCustomViewAsync(): Promise<CustomView>;
 }
 
 export class FilterEvent extends TableauEvent {
-  // properties
-  getWorksheet(): Worksheet;
-  getFieldName(): string;
-  // methods
-  getFilterAsync(): Promise<Filter>;
+    // properties
+    getWorksheet(): Worksheet;
+    getFieldName(): string;
+    // methods
+    getFilterAsync(): Promise<Filter>;
 }
 
 export class MarksEvent extends TableauEvent {
-  // properties
-  getWorksheet(): Worksheet;
-  // methods
-  getMarksAsync(): Promise<Mark[]>
+    // properties
+    getWorksheet(): Worksheet;
+    // methods
+    getMarksAsync(): Promise<Mark[]>;
 }
 
 export class ParameterEvent extends TableauEvent {
-  // properties
-  getParameterName(): string;
-  // methods
-  getParameterAsync(): Promise<Parameter>;
+    // properties
+    getParameterName(): string;
+    // methods
+    getParameterAsync(): Promise<Parameter>;
 }
 
 export class StoryPointSwitchEvent extends TableauEvent {
-  // properties
-  getOldStoryPointInfo(): StoryPointInfo;
-  getNewStoryPoint(): StoryPoint;
+    // properties
+    getOldStoryPointInfo(): StoryPointInfo;
+    getNewStoryPoint(): StoryPoint;
 }
 
 export class TabSwitchEvent extends TableauEvent {
-  // properties
-  getOldSheetName(): string;
-  getNewSheetName(): string;
+    // properties
+    getOldSheetName(): string;
+    getNewSheetName(): string;
 }
 
 export class ToolbarStateEvent {
-  getToolbarState(): ToolbarState;
+    getToolbarState(): ToolbarState;
 }
 
 export class UrlActionEvent {
-  getURL(): string;
-  getTarget(): string;
+    getURL(): string;
+    getTarget(): string;
 }
 
 export class VizResizeEvent extends TableauEvent {
-  getVizSize(): Size;
+    getVizSize(): Size;
 }

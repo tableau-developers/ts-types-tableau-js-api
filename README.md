@@ -2,7 +2,7 @@
 
 The Tableau Javascript API does not currently include type definitions which makes writing a Tableau embedded application using Typescript less efficient and reliable. This project aims to bridge that gap.
 
-**These type definitions are a personal project and are neither owned nor supported by Tableau. If you have issues or questions, please submit an issue in this repo. Please do not reach out to Tableau Support.**
+**These type definitions are a personal project and are not supported by Tableau. If you have issues or questions, please submit an issue in this repo. Please do not reach out to Tableau Support.**
 
 ## Tableau version
 
